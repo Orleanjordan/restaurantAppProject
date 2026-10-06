@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+ <!-- Header Area -->
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:gravity="center_vertical"
+     android:padding="16dp">
+
+  <ImageView
+      android:id="@+id/myImageView"
+      android:layout_width="140dp"
+      android:layout_height="54dp"
+      android:contentDescription="Pizza Image"
+      android:src="@drawable/imgpiz" />
+
+  <View
+      android:layout_width="0dp"
+      android:layout_height="4dp"
+      android:layout_weight="2" />
+
+  <Button
+      android:layout_width="101dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#FFEB3B"
+      android:text="Order"
+      android:textColor="@color/black" />
+
+  <ImageView
+      android:id="@+id/myMenuBtn"
+      android:layout_width="41dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="18dp"
+      android:contentDescription="Menu Button"
+      android:src="@drawable/menu" />
+ </LinearLayout>
+
+ <!-- Content Area -->
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:orientation="vertical">
+
+  <TextView
+      android:id="@+id/myTitlePiz"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Best Pizza Bar " />
+
+  <TextView
+      android:id="@+id/miniTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Where every Slyce is a pizza of paradise"
+      android:textSize="16sp" />
+
+  <LinearLayout
+      android:layout_width="264dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:orientation="horizontal">
+
+   <Button
+       android:id="@+id/scMenuF"
+       android:layout_width="125dp"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="8dp"
+       android:backgroundTint="#FFEB3B"
+       android:text="Browse Our Menu" />
+
+   <Button
+       android:id="@+id/scMenuF2"
+       android:layout_width="125dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="8dp"
+       android:backgroundTint="#FFEB3B"
+       android:text="Browse Our Menu" />
+  </LinearLayout>
+ </LinearLayout>
+</LinearLayout>
