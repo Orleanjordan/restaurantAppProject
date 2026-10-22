@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button scMenuF, scMenuF2;
+    Button scMenuF, scMenuF2, orderB ;
     ImageView myMenuBtn;
 
     @Override
@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // 1. Header Menu Button
-        myMenuBtn = findViewById(R.id.myMenuBtn);
-        myMenuBtn.setOnClickListener(new View.OnClickListener() {
+         orderB = findViewById(R.id.orderBF );
+         orderB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, menuBTN1.class);
+                Intent intent = new Intent(MainActivity.this, orderBActivity.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         scMenuF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, menuBTN1.class);
+                Intent intent = new Intent(MainActivity.this, pizzaMenuActivity.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         scMenuF2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, menuBTN1.class);
+                Intent intent = new Intent(MainActivity.this, drinksMenuActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image Layer -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background"
+        android:contentDescription="Background Image" />
+
+    <!-- Foreground UI Layer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header Area (Stays consistent across both screens) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="140dp"
+                android:layout_height="54dp"
+                android:contentDescription="Pizza Image"
+                android:src="@drawable/imgpiz" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="2" />
+
+            <Button
+                android:id="@+id/orderB"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFEB3B"
+                android:text="Order"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/myMenuBtn"
+                android:layout_width="41dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="18dp"
+                android:contentDescription="Menu Button"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+
+        <!-- SCREEN 1: MAIN DRINK CATEGORIES -->
+        <LinearLayout
+            android:id="@+id/mainScreenLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:text="Explore Our Drinks"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="26sp" />
+
+            <!-- Grid Container: Centers everything vertically and horizontally -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- ROW 1: Top Two Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="32dp"
+                    android:weightSum="2">
+
+                    <!-- Section 1: Boba -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/buttonBeer"
+                            android:background="@drawable/square_button_shape"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:textSize="45sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Beer"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!-- Section 2: Coffee -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/square_button_shape"
+                            android:textSize="45sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Cocktails"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- ROW 2: Bottom Two Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!-- Section 3: Soda -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/square_button_shape"
+                            android:textSize="45sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Wine"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!-- Section 4: Juice -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/square_button_shape"
+                            android:textSize="45sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Soft Drinks"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- SCREEN 2: DRINK DETAILS SCREEN (Put your hidden list view layout directly under here) -->
+
+    </LinearLayout>
+</FrameLayout>
