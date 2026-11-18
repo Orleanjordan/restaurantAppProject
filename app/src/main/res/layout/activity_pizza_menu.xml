@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent">
 
     <!-- Background Image Layer -->
@@ -56,7 +57,7 @@
                 android:src="@drawable/menu" />
         </LinearLayout>
 
-        <!-- SCREEN 1: MAIN DRINK CATEGORIES -->
+
         <LinearLayout
             android:id="@+id/mainScreenLayout"
             android:layout_width="match_parent"
@@ -116,19 +117,21 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <!-- Section 2: Coffee -->
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center">
+
                         <Button
                             android:id="@+id/button2"
                             android:layout_width="120dp"
                             android:background="@drawable/square_button_shape"
                             android:layout_height="120dp"
                             android:textSize="45sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -149,25 +152,30 @@
 
                     <!-- Section 3: Soda -->
                     <LinearLayout
+                        android:id="@+id/veggiePizza"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center">
-                        <Button
-                            android:id="@+id/button3"
+                        <ImageButton
                             android:layout_width="120dp"
-                            android:background="@drawable/square_button_shape"
                             android:layout_height="120dp"
-                            android:textSize="45sp" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:background="@drawable/images1212"/>
+
+                        <CheckBox
+
+                            android:layout_width="152dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
                             android:layout_marginTop="12dp"
+                            android:gravity="center"
                             android:text="Veggie"
                             android:textColor="@color/white"
-                            android:textStyle="bold"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
                     </LinearLayout>
 
                     <!-- Section 4: Juice -->

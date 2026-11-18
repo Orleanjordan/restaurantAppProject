@@ -154,12 +154,11 @@
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center">
-                        <Button
-                            android:id="@+id/button3"
+                        <ImageButton
                             android:layout_width="120dp"
                             android:layout_height="120dp"
-                            android:background="@drawable/square_button_shape"
-                            android:textSize="45sp" />
+                            android:background="@drawable/wine5323009_640"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
