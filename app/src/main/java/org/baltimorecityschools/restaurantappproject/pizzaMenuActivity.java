@@ -1,3 +1,4 @@
+
 package org.baltimorecityschools.restaurantappproject;
 
 import android.content.Intent;
@@ -11,30 +12,65 @@ import androidx.appcompat.app.AppCompatActivity;
 public class pizzaMenuActivity extends AppCompatActivity {
 
     Button orderSc;
-    boolean pizzTrue;
+    ImageButton pepperoniButton, veggieButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pizza_menu);
 
+        orderSc = findViewById(R.id.orderB);
+        pepperoniButton = findViewById(R.id.pepperoniButton);
+        veggieButton = findViewById(R.id.veggieButton);
 
-        ImageButton myImageButton = findViewById(R.id.veggiePizza);
-        myImageButton.setOnClickListener(new View.OnClickListener() {
+        // Pepperoni button
+        pepperoniButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(pizzaMenuActivity.this, orderBActivity.class);
+
+                Intent intent = new Intent(
+                        pizzaMenuActivity.this,
+                        orderBActivity.class
+                );
+
+                intent.putExtra("pizzaName", "Pepperoni");
+
                 startActivity(intent);
             }
         });
 
-        orderSc = findViewById(R.id.orderB);
+        // Veggie button
+        veggieButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(
+                        pizzaMenuActivity.this,
+                        orderBActivity.class
+                );
+
+                intent.putExtra("pizzaName", "Veggie");
+
+                startActivity(intent);
+            }
+        });
+
+        // Order button
         orderSc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(pizzaMenuActivity.this, orderBActivity.class);
+
+                Intent intent = new Intent(
+                        pizzaMenuActivity.this,
+                        orderBActivity.class
+                );
+
+                intent.putExtra("pizzaName", "Pepperoni");
+
                 startActivity(intent);
             }
         });
-    }  
+    }
 }
+
+
