@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your Pizza Order"
+                android:text="@string/title_Pizza_Order"
                 android:textColor="@color/white"
                 android:textSize="27sp"
                 android:textStyle="bold"
@@ -45,7 +45,7 @@
                 android:id="@+id/pizzaNameText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pizza Name"
+                android:text="@string/sub_Title_PizzaName"
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -57,7 +57,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Choose Size"
+                android:text="@string/title_ChooseSize"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -71,21 +71,21 @@
                     android:id="@+id/smallPizza"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Small (+$0.00)"
+                    android:text="@string/title_SmallSizePrice"
                     android:textColor="@color/white" />
 
                 <RadioButton
                     android:id="@+id/mediumPizza"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Medium (+$2.00)"
+                    android:text="@string/title_MediumSizePrice"
                     android:textColor="@color/white" />
 
                 <RadioButton
                     android:id="@+id/largePizza"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Large (+$4.00)"
+                    android:text="@string/title_LargeSizePrice"
                     android:textColor="@color/white" />
 
             </RadioGroup>
@@ -95,7 +95,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Choose Crust"
+                android:text="@string/title_crustOption"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -110,14 +110,14 @@
                     android:id="@+id/regularCrust"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regular (+$0.00)"
+                    android:text="@string/title_RegularCrust"
                     android:textColor="@color/white" />
 
                 <RadioButton
                     android:id="@+id/stuffedCrust"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Stuffed (+$1.50)"
+                    android:text="@string/title_stuffedCrust"
                     android:textColor="@color/white" />
 
             </RadioGroup>

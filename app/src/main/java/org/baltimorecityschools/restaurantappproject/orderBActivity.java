@@ -25,7 +25,6 @@ public class orderBActivity extends AppCompatActivity {
     EditText quantityInput;
 
     Button placeOrderButton;
-
     String pizzaName;
 
     double basePrice;
@@ -42,15 +41,11 @@ public class orderBActivity extends AppCompatActivity {
 
 
         pizzaImage = findViewById(R.id.pizzaImage);
-
         pizzaNameText = findViewById(R.id.pizzaNameText);
         receiptText = findViewById(R.id.receiptText);
-
         sizeGroup = findViewById(R.id.sizeGroup);
         crustGroup = findViewById(R.id.crustGroup);
-
         quantityInput = findViewById(R.id.quantityInput);
-
         placeOrderButton = findViewById(R.id.placeOrderButton);
 
 
@@ -60,8 +55,6 @@ public class orderBActivity extends AppCompatActivity {
         if (pizzaName == null) {
             pizzaName = "Pepperoni";
         }
-
-
 
         pizzaNameText.setText(pizzaName);
 
@@ -162,7 +155,7 @@ public class orderBActivity extends AppCompatActivity {
 
                 total = subtotal + tax;
 
-          
+
 
                 String receipt =
 

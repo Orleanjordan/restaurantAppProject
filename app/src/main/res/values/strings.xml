@@ -1,3 +1,32 @@
 <resources>
+
     <string name="app_name">restaurantAppProject</string>
+    <string name="pizza_Image">Pizza Image</string>
+    <string name="order_Button">Order</string>
+    <string name="title_ScreenMain">Best Pizza Bar</string>
+    <string name="h3_title">Where Every slyce is a Pizza of Paradise</string>
+    <string name="title_BrowseMenuPizza">Browse Our Menu on Pizza</string>
+    <string name="title_BrowseMenuDrinks">Browse Our Menu on Drinks</string>
+
+
+<!--   Drinkings Screen  -->
+
+    <string name="order_Button2">Order</string>
+    <string name="title_ExploreDrinks">Explore Our Drinks</string>
+    <string name="title_Beer">Beer</string>
+    <string name="title_wine">Wine</string>
+
+
+<!--  Ordering Pizza and adjusting the Food and receipt   -->
+    <string name="title_Pizza_Order">Your Pizza Order</string>
+    <string name="sub_Title_PizzaName">Pizza Name</string>
+    <string name="title_ChooseSize">Choose Size</string>
+    <string name="title_SmallSizePrice">Small (+$0.00)</string>
+    <string name="title_MediumSizePrice">Medium (+$2.00)</string>
+    <string name="title_LargeSizePrice">Large (+$4.00)</string>
+    <string name="title_crustOption">Choose crust</string>
+    <string name="title_RegularCrust">regular (+$0.00)</string>
+    <string name="title_stuffedCrust">Stuffed (+$1.50)</string>
+
+
 </resources>
