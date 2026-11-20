@@ -39,7 +39,7 @@ public class orderBActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_bactivity);
 
-        // Connect XML to Java
+
 
         pizzaImage = findViewById(R.id.pizzaImage);
 
@@ -53,7 +53,7 @@ public class orderBActivity extends AppCompatActivity {
 
         placeOrderButton = findViewById(R.id.placeOrderButton);
 
-        // Receive pizza name from previous activity
+
 
         pizzaName = getIntent().getStringExtra("pizzaName");
 
@@ -61,7 +61,7 @@ public class orderBActivity extends AppCompatActivity {
             pizzaName = "Pepperoni";
         }
 
-        // Display selected pizza
+
 
         pizzaNameText.setText(pizzaName);
 
@@ -76,12 +76,9 @@ public class orderBActivity extends AppCompatActivity {
             basePrice = 9.00;
         }
 
-        // Default selections
-
         sizeGroup.check(R.id.smallPizza);
         crustGroup.check(R.id.regularCrust);
 
-        // Place Order button
 
         placeOrderButton.setOnClickListener(new View.OnClickListener() {
 
@@ -111,7 +108,7 @@ public class orderBActivity extends AppCompatActivity {
                     return;
                 }
 
-                // Get pizza size
+
 
                 int selectedSize = sizeGroup.getCheckedRadioButtonId();
 
@@ -134,7 +131,7 @@ public class orderBActivity extends AppCompatActivity {
                     sizePrice = 4.00;
                 }
 
-                // Get crust type
+
 
                 int selectedCrust = crustGroup.getCheckedRadioButtonId();
 
@@ -152,20 +149,20 @@ public class orderBActivity extends AppCompatActivity {
                     crustPrice = 1.50;
                 }
 
-                // Calculate subtotal
+
 
                 subtotal = (basePrice + sizePrice + crustPrice)
                         * quantity;
 
-                // Calculate tax
+
 
                 tax = subtotal * 0.06;
 
-                // Calculate total
+
 
                 total = subtotal + tax;
 
-                // Display receipt
+          
 
                 String receipt =
 

@@ -23,7 +23,7 @@ public class pizzaMenuActivity extends AppCompatActivity {
         pepperoniButton = findViewById(R.id.pepperoniButton);
         veggieButton = findViewById(R.id.veggieButton);
 
-        // Pepperoni button
+
         pepperoniButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class pizzaMenuActivity extends AppCompatActivity {
             }
         });
 
-        // Veggie button
+
         veggieButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +55,6 @@ public class pizzaMenuActivity extends AppCompatActivity {
             }
         });
 
-        // Order button
         orderSc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
